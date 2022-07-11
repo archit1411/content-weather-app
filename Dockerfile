@@ -1,7 +1,7 @@
 # Create an image for the weather-app
 FROM node AS source
 RUN mkdir -p /node/weather-app
-ADD src/ /node/weather-app
+ADD . /node/weather-app
 WORKDIR /node/weather-app
 RUN npm install
 
